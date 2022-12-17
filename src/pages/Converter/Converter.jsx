@@ -17,9 +17,13 @@ const Converter = () => {
     const data = JSON.parse(localStorage.getItem('currencyData'));
     setUsdAmound(data[0].rateBuy.toFixed(2));
     setEurAmound(data[1].rateBuy.toFixed(2));
+    setUahAmound(1);
   }, []);
 
   useEffect(() => {
+    if (firstAmound === 0 && firstAmound) {
+      return;
+    }
     if (firstCurrent === 'USD' && secondCurrent === 'USD') {
       setSecondAmound(firstAmound);
     }
