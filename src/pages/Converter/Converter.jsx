@@ -11,8 +11,6 @@ import {
 const Converter = () => {
   const currencies = ['USD', 'EUR', 'UAH'];
 
-  const data = JSON.parse(localStorage.getItem('currencyData'));
-
   const [usdAmound, setUsdAmound] = useState(0);
   const [eurAmound, setEurAmound] = useState(0);
   const [uahAmound, setUahAmound] = useState(1);
@@ -21,6 +19,8 @@ const Converter = () => {
   const [firstCurrent, setFirstCurrent] = useState('USD');
   const [secondCurrent, setSecondCurrent] = useState('USD');
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
+
+  const data = JSON.parse(localStorage.getItem('currencyData'));
 
   useEffect(() => {
     setUsdAmound(data[0].rateBuy.toFixed(2));
@@ -78,7 +78,7 @@ const Converter = () => {
         setFirstAmound((secondAmound * (usdAmound / eurAmound)).toFixed(2));
       }
       if (firstCurrent === 'USD' && secondCurrent === 'UAH') {
-        setFirstAmound((secondAmound * (uahAmound * usdAmound)).toFixed(2));
+        setFirstAmound((secondAmound * (uahAmound / usdAmound)).toFixed(2));
       }
       if (firstCurrent === 'EUR' && secondCurrent === 'EUR') {
         setFirstAmound(secondAmound);
