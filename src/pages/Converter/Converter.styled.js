@@ -36,9 +36,9 @@ border-radius: 3px;
 -khtml-border-radius: 3px; 
 background: #ffffff !important; 
 outline: none; 
-height: 24px; 
+height: 34px; 
 width: 120px;
 color: black;
-font-size: 11px; 
+font-size: 16px; 
 font-family: Tahoma; 
 `
