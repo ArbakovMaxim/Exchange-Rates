@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/Exchange-Rates/static/js/main.e822dfef.js",
+    "main.js": "/Exchange-Rates/static/js/main.b2a6b9fc.js",
     "static/js/2.c46743e1.chunk.js": "/Exchange-Rates/static/js/2.c46743e1.chunk.js",
     "static/media/30474344.png": "/Exchange-Rates/static/media/30474344.78709c5dfd900da8b47c.png",
     "static/media/authBg.jpg": "/Exchange-Rates/static/media/authBg.6579c6ecd2e0016cdd94.jpg",
     "index.html": "/Exchange-Rates/index.html",
-    "main.e822dfef.js.map": "/Exchange-Rates/static/js/main.e822dfef.js.map",
+    "main.b2a6b9fc.js.map": "/Exchange-Rates/static/js/main.b2a6b9fc.js.map",
     "2.c46743e1.chunk.js.map": "/Exchange-Rates/static/js/2.c46743e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e822dfef.js"
+    "static/js/main.b2a6b9fc.js"
   ]
 }
