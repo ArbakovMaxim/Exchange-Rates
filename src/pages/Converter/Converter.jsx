@@ -23,9 +23,11 @@ const Converter = () => {
   const data = JSON.parse(localStorage.getItem('currencyData'));
 
   useEffect(() => {
-    setUsdAmound(data[0].rateBuy.toFixed(2));
-    setEurAmound(data[1].rateBuy.toFixed(2));
-    setUahAmound(1);
+    if (data) {
+      setUsdAmound(data[0].rateBuy.toFixed(2));
+      setEurAmound(data[1].rateBuy.toFixed(2));
+      setUahAmound(1);
+    }
   }, [data]);
 
   useEffect(() => {
